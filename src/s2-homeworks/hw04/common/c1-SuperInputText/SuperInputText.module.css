@@ -8,6 +8,12 @@
 }
 
 .superInput {
+    width: 276px;
+    height: 36px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid rgba(209, 209, 209, 1)
+
 }
 
 .errorInput {
