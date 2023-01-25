@@ -16,6 +16,8 @@ export type UserType = {
     name: string
     age: number
 }
+export type StateType=Array<UserType>
+
 
 const initialPeople: UserType[] = [
     // студенты могут поменять имя/возраст/количество объектов, _id должны быть целочисленные
@@ -32,7 +34,7 @@ const HW8 = () => {
     const [currentSort, setCurrentSort] = useState('')
 
     const finalPeople = people.map((u: UserType) => <User key={u._id} u={u}/>)
-
+//console.log(finalPeople)
     const sortUp = () => {
         setPeople(
             homeWorkReducer(initialPeople, {type: 'sort', payload: 'up'})
@@ -90,7 +92,8 @@ const HW8 = () => {
                         </tr>
                         </thead>
 
-                        <tbody>{finalPeople}</tbody>
+                        <tbody>{finalPeople}---</tbody>
+{}
                     </table>
                 </div>
             </div>

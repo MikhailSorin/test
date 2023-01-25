@@ -5,19 +5,44 @@
 }
 
 .users {
+    margin-left: 70px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 14px;
+    line-height: 16px;
+    width: 606px;
+    margin-top: 18px;
+
 }
 
 .buttonsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 24px;
+    gap: 10px;
+
+/*    margin-left: 307px;*/
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
 }
 
 .thead {
+    font-weight: 600;
+    width: 606px;
+    height: 36px;
+    background: #E5E5E5;
+
 }
 
 .nameCol {
+
 }
 
 .ageCol {
+
 }
